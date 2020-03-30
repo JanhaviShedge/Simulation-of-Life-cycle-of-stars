@@ -1,5 +1,5 @@
 # Simulation-of-Life-cycle-of-starsrs
-#This is an Astrohack week Project
+This is an Astrohack week Project
 
 ## Requirements
 
