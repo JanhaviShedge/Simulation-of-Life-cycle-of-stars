@@ -22,7 +22,7 @@ animation.caption=s
 
 gray=color.gray(0.7)
 
-Natoms=1000
+Natoms=1000 # number of objects in this case stars
 mass = 4E-3/6E23 # helium mass
 Ratom = 0.09 # wildly exaggerated size of helium atom
 k = 1.4E-23 # Boltzmann constant
@@ -50,14 +50,14 @@ j=0.2
 k=1
 nebula=sphere(pos=vector(-1,0,0),radius=10,color=color.yellow, opacity=j)
 
-for j in range(0,10):
-    rate(10)
+for j in range(0,50):
+    rate(5)
     nebula.opacity= nebula.opacity+ 0.3
     
     while(k<=100):
-        rate(150)
+        rate(100)
         nebula.radius=nebula.radius-0.1
-        if nebula.radius<=3:
+        if nebula.radius<=5:
             break
         else:
             continue
@@ -72,12 +72,12 @@ v='''   LOW MASS STARS
 animation.caption=v
 
 nebula=sphere(pos=vector(-1,0,0),radius=8,color=color.gray(0.7), opacity=0.7)
-for j in range(0,10):
-    rate(10)
+for j in range(0,50):
+    rate(5)
     nebula.opacity= nebula.opacity+ 0.3
     
     while(k<=100):
-        rate(150)
+        rate(100)
         nebula.radius=nebula.radius-0.1
         if nebula.radius<=3:
             break
@@ -99,12 +99,12 @@ z='''   HIGH MASS STARS
 animation.caption=z
 
 nebula=sphere(pos=vector(-1,0,0),radius=3,color=color.red, opacity=0.7)
-for j in range(0,10):
-    rate(10)
+for j in range(0,50):
+    rate(5)
     nebula.opacity= nebula.opacity+ 0.3
     
     while(k<=100):
-        rate(150)
+        rate(100)
         nebula.radius=nebula.radius+0.1
         if nebula.radius<=12:
             break
